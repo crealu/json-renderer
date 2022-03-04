@@ -3,8 +3,8 @@ React app that renders expandable JSON.
 
 &nbsp;
 ## Requirements
-React 17.x
-Node 14.x
+React 17.x  
+Node 14.x  
 
 &nbsp;
 ## Usage
