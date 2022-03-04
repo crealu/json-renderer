@@ -7,5 +7,5 @@ React, Node
 
 &nbsp;
 ## Usage
-This app is can be used to view data stored as JSON. 
-A live example can be found here.
+This app is can be used to view data stored as JSON.
+A live example can be found at https://json-renderer.herokuapp.com/.
