@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+.app {
+  text-align: center;
+  width: 500px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  line-height: 30px;
+  font-family: 'Lato';
+}
+
+.expand-btn {
+  position: absolute;
+  left: -22px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: lightgray;
+}
+
+.expand-btn:hover {
+  background: lightblue;
+}
+
+.prop-comp {
+  position: relative;
+  text-align: left;
+  display: none;
+}
+
+.prop-level-0 {
+  display: block;
+}
