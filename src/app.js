@@ -1,17 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import JSONRenderer from './components/JSONRenderer';
 
+const userURL = 'https://randomuser.me/api';
+const botwURL = 'https://botw-compendium.herokuapp.com/api/v3/compendium/all';
+
 const App = () => {
   const [data, setData] = useState({});
 
   const fetchUser = () => {
-    return fetch('https://randomuser.me/api')
+    return fetch(userURL)
       .then(res => res.json())
+      .then(data => { 
+        setData(data.results[0]) 
+      })
+      .catch(err => console.error(err));
+  }
+
+  const fetchItems = () => {
+    return fetch(botwURL)
+      .then(res => res.json())
+      .then(data => { 
+        setData(data.data[0]) 
+      })
       .catch(err => console.error(err));
   }
 
   useEffect(() => {
-    fetchUser().then(data => { setData(data.results[0]) })
+    // fetchUser();
+    fetchItems();
   }, [])
 
   return (
